@@ -32,7 +32,7 @@ Currently focused on: **MLOps**, **AI Agents**, and **scalable ML deployment**
 `PyTorch` `Scikit-learn` `LightGBM` `XGBoost` `ONNX` `Transformers`
 
 **MLOps & Deployment**
-`FastAPI` `Docker` `MLflow` `GitHub Actions` `Render` `DockerHub`
+`FastAPI` `Docker` `GitHub Actions` `Render` `DockerHub`
 
 **Backend & Data**
 `Python` `Node.js` `PostgreSQL` `MongoDB` `Weaviate`
