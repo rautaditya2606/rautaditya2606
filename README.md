@@ -18,7 +18,7 @@
 GenAI Engineer Intern @ **AllCognix AI** — working on RAG pipelines, LLM systems, and production ML infrastructure.
 
 - 🔧 Cut RAG latency by **40%** and token usage by **60%** via Haystack 2.x migration
-- ⚡ Built **8x faster** document ingestion using parallel processing in production
+- ⚡ Reduced document ingestion from **70s → 27s** via parallel processing with ThreadPoolExecutor in production
 - 🌾 Deployed wheat disease classifier with **92% accuracy** + **75% model size reduction** via ONNX
 - 🚕 Trained LightGBM on **55M rows** with spatial-temporal feature engineering
 
