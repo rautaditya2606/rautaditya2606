@@ -46,7 +46,7 @@ Currently focused on: **MLOps**, **AI Agents**, and **scalable ML deployment**
 
 | Project | Stack | Highlights |
 |---|---|---|
-| [🌾 Wheat Disease Detection](https://github.com/rautaditya2606/wheat_detection) | PyTorch · ONNX · FastAPI · Gemini | 92% accuracy · 75% model compression · live API |
+| [🌾 Wheat Disease Detection](https://github.com/rautaditya2606/wheat_detection) | PyTorch · ONNX · FastAPI · Gemini | 87% accuracy · 75% model compression · live API |
 | [🏪 Rossmann Sales Forecasting](https://github.com/rautaditya2606/Rossman-Deployed) | LightGBM · Flask · Render | Automated feature enrichment · 84% input reduction |
 | [🚕 NYC Taxi Fare Prediction](https://github.com/rautaditya2606/FastAPI_NYC) | LightGBM · FastAPI · Docker | 55M rows · Haversine features · containerized API |
 | [📊 ML Projects Portfolio](https://github.com/rautaditya2606/ML-Projects) | PyTorch · XGBoost · Scikit-learn | 8 end-to-end projects across CV, regression, classification |
