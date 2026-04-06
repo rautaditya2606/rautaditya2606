@@ -7,8 +7,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-raut-3b4bba31b)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:rautaditya2606@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Projects-181717?style=flat&logo=github&logoColor=white)](https://github.com/rautaditya2606?tab=repositories)
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rautaditya2606&show_icons=true&theme=default)
+[![Portfolio](https://img.shields.io/badge/Projects-181717?style=flat&logo=github&logoColor=white)]([https://github.com/rautaditya2606?tab=repositories](https://portfolio-kms6.vercel.app/))
 
 </div>
 
