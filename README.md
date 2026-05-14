@@ -19,18 +19,13 @@
 
 ## About
 
-GenAI Engineer Intern @ **AllCognix AI** — RAG pipelines, LLM systems, production ML infrastructure.
+GenAI Engineer Intern @ **AllCognix AI**, working on RAG pipelines, LLM systems, and production ML infrastructure.
 
-```
-RAG latency    ████████████████████░░░░  40% faster
-Token costs    ████████████████████████░  60% cheaper
-Doc ingestion  70s ──────────────────► 27s
-```
-
-- Cut RAG latency by **40%** and token usage by **60%** via Haystack 2.x migration
-- Reduced document ingestion from **70s → 27s** via `ThreadPoolExecutor` parallel processing
-- Deployed wheat disease classifier — **92% accuracy**, **75% model compression** via ONNX + TensorRT
-- Trained LightGBM on **55M rows** with spatial-temporal feature engineering
+- Authoring a research paper on edge-AI deployment for agricultural CV — benchmarking TensorRT, ONNX Runtime, and OpenVINO on Jetson Nano.
+- Cut RAG latency by **40%** and token costs by **60%** via Haystack 2.x migration
+- Reduced document ingestion from **70s → 27s** with parallel processing
+- Deployed wheat disease classifier: **92% accuracy**, **75% model compression** via ONNX + TensorRT
+- Trained LightGBM on **5.5M rows** with spatial-temporal feature engineering
 
 ---
 
@@ -74,7 +69,6 @@ Research paper on deployment-aware model adaptation for agricultural CV on edge 
 
 `PyTorch` `TensorRT` `ONNX` `OpenVINO` `Jetson Nano`
 
-**Under review · CEA + arXiv cs.CV**
 
 </td>
 <td width="50%">
