@@ -44,16 +44,7 @@ Doc ingestion  70s ──────────────────► 27s
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![LightGBM](https://img.shields.io/badge/LightGBM-02569B?style=flat-square&logoColor=white)
 ![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
-![TensorRT](https://img.shields.io/badge/TensorRT-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![OpenVINO](https://img.shields.io/badge/OpenVINO-0071C5?style=flat-square&logo=intel&logoColor=white)
 
-**GenAI & LLMs**
-
-![Haystack](https://img.shields.io/badge/Haystack_2.x-FF6B35?style=flat-square&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?style=flat-square&logo=google&logoColor=white)
-![OpenAI](https://img.shields.io/badge/GPT--4o-412991?style=flat-square&logo=openai&logoColor=white)
-![Weaviate](https://img.shields.io/badge/Weaviate-FF6D00?style=flat-square&logoColor=white)
 
 **MLOps & Deployment**
 
@@ -66,7 +57,6 @@ Doc ingestion  70s ──────────────────► 27s
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 
 </div>
@@ -79,22 +69,22 @@ Doc ingestion  70s ──────────────────► 27s
 <tr>
 <td width="50%">
 
+### [Edge-AI Wheat Disease Classification](https://github.com/rautaditya2606/research_paper)
+Research paper on deployment-aware model adaptation for agricultural CV on edge hardware. Benchmarks TensorRT, ONNX Runtime, and OpenVINO across INT8/FP16/FP32 with a novel **Deployment Efficiency Score (DES)** metric.
+
+`PyTorch` `TensorRT` `ONNX` `OpenVINO` `Jetson Nano`
+
+**Under review · CEA + arXiv cs.CV**
+
+</td>
+<td width="50%">
+
 ### [Wheat Disease Detection](https://github.com/rautaditya2606/wheat_detection)
 Multi-model edge deployment system with TensorRT, ONNX Runtime, and OpenVINO benchmarking. Includes a novel **Deployment Efficiency Score (DES)** metric and INT8 quantization analysis.
 
 `PyTorch` `TensorRT` `ONNX` `FastAPI` `Gemini`
 
 **92% accuracy · 75% model compression · live API**
-
-</td>
-<td width="50%">
-
-### [Rossmann Sales Forecasting](https://github.com/rautaditya2606/Rossman-Deployed)
-LightGBM pipeline on multi-store retail data with automated feature enrichment and PostgreSQL logging. Deployed on Render.
-
-`LightGBM` `Flask` `PostgreSQL` `Render`
-
-**Automated pipeline · production-deployed**
 
 </td>
 </tr>
@@ -111,12 +101,12 @@ Geospatial ML on 55M rows with Haversine distance features. Containerized and se
 </td>
 <td width="50%">
 
-### [ML Projects Portfolio](https://github.com/rautaditya2606/ML-Projects)
-8 end-to-end projects spanning computer vision, regression, and classification.
+### [Rossmann Sales Forecasting](https://github.com/rautaditya2606/Rossman-Deployed)
+LightGBM pipeline on multi-store retail data with automated feature enrichment and PostgreSQL logging. Deployed on Render.
 
-`PyTorch` `XGBoost` `Scikit-learn`
+`LightGBM` `Flask` `PostgreSQL` `Render`
 
-**8 projects · CV + tabular ML**
+**Automated pipeline · production-deployed**
 
 </td>
 </tr>
