@@ -118,11 +118,7 @@ LightGBM pipeline on multi-store retail data with automated feature enrichment a
 ---
 
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=rautaditya2606&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0f0c29&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0" height="160"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rautaditya2606&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0f0c29&title_color=a78bfa&text_color=e2e8f0" height="160"/>
-
-<br/><br/>
+<br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=100&section=footer" width="100%"/>
 
