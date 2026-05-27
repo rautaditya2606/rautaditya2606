@@ -65,24 +65,27 @@ GenAI Engineer Intern @ **AllCognix AI**, working on RAG pipelines, LLM systems,
 <td width="50%">
 
 ### [Edge-AI Wheat Disease Classification](https://github.com/rautaditya2606/research_paper)
-Research paper on deployment-aware model adaptation for agricultural CV on edge hardware. Benchmarks TensorRT, ONNX Runtime, and OpenVINO across INT8/FP16/FP32 with a novel **Deployment Efficiency Score (DES)** metric.
 
-`PyTorch` `TensorRT` `ONNX` `OpenVINO` `Jetson Nano`
+Research-focused study on deployment-aware agricultural AI for constrained edge hardware. Investigates INT8/FP16 quantization stability across TensorRT, ONNX Runtime, and OpenVINO, introducing a novel **Deployment Efficiency Score (DES)** metric balancing accuracy and throughput.
 
+`PyTorch` `TensorRT` `ONNX Runtime` `OpenVINO` `Jetson Nano`
+
+**54.5 FPS edge inference · INT8 recovery engineering · leakage-audited benchmark**
 
 </td>
+
 <td width="50%">
 
-### [Wheat Disease Detection](https://github.com/rautaditya2606/wheat_detection)
-Multi-model edge deployment system with TensorRT, ONNX Runtime, and OpenVINO benchmarking. Includes a novel **Deployment Efficiency Score (DES)** metric and INT8 quantization analysis.
+### [Wheat Disease Intelligence Platform](https://github.com/rautaditya2606/wheat_detection)
 
-`PyTorch` `TensorRT` `ONNX` `FastAPI` `Gemini`
+Production-style ML platform for wheat disease diagnosis featuring ConvNeXt-Tiny inference, CLIP-based validation, OpenCV symptom overlays, GPT-powered recommendations, and human-in-the-loop feedback collection.
 
-**92% accuracy · 75% model compression · live API**
+`FastAPI` `ONNX Runtime` `PostgreSQL` `Docker` `Cloudinary` `OpenAI`
+
+**88.46% accuracy · 75% model compression · live deployed system**
 
 </td>
 </tr>
-<tr>
 <td width="50%">
 
 ### [NYC Taxi Fare Prediction](https://github.com/rautaditya2606/FastAPI_NYC)
