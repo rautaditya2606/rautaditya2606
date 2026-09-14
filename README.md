@@ -99,7 +99,7 @@ Production ML platform with ConvNeXt-Tiny inference, CLIP-based input validation
 
 <td width="50%">
 
-### [Rossmann Sales Forecasting](https://github.com/rautaditya2606/rossmann)
+### [Rossmann Sales Forecasting](https://github.com/rautaditya2606/Rossman-Deployed)
 
 Time-series sales forecasting on 1M+ rows of Rossmann store data. Feature engineering on promotions, holidays, and store metadata. Containerized and served via FastAPI.
 
