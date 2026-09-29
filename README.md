@@ -136,6 +136,8 @@ Time-series sales forecasting on 1M+ rows of Rossmann store data. Feature engine
 | [#22167](https://github.com/run-llama/llama_index/pull/22167) | llama_index | `SemanticDoubleMergingSplitterNodeParser`: stopword removal now uses word tokenization |
 | [#25862](https://github.com/mlflow/mlflow/pull/25862) | mlflow | `set_logged_model_tags`: bulk upsert for SQLite, PostgreSQL and MySQL |
 | [#274](https://github.com/kubeflow/mcp-server/pull/274) | kubeflow/mcp-server | Unrestricted access not propagated when inheriting from parent persona |
+| [#248](https://github.com/kubeflow/mcp-server/pull/248) | kubeflow/mcp-server | Return `RESOURCE_NOT_FOUND` on missing job in trainer monitoring tools |
+| [#279](https://github.com/kubeflow/mcp-server/pull/279) | kubeflow/mcp-server | Make `_inject_trainer_hf_home` thread-safe for concurrent calls |
 | [#955](https://github.com/pydata/sparse/pull/955) | pydata/sparse | `sparse.diagonal`: support for negative offsets, rectangular shapes and negative axes |
 | [#960](https://github.com/pydata/sparse/pull/960) | pydata/sparse | `save_npz` / `load_npz`: support for CSR, CSC and DOK formats |
 
@@ -145,8 +147,6 @@ Time-series sales forecasting on 1M+ rows of Rossmann store data. Feature engine
 |----|------|--------|
 | [#12990](https://github.com/deepset-ai/haystack/pull/12990) | haystack | `Agent`: schema-constrained structured outputs with a recovery loop |
 | [#12824](https://github.com/deepset-ai/haystack/pull/12824) | haystack | Redact `ImageContent` and `FileContent` in `ToolCallResult` trace dicts |
-| [#248](https://github.com/kubeflow/mcp-server/pull/248) | kubeflow/mcp-server | Return `RESOURCE_NOT_FOUND` on missing job in trainer monitoring tools |
-| [#279](https://github.com/kubeflow/mcp-server/pull/279) | kubeflow/mcp-server | Make `_inject_trainer_hf_home` thread-safe for concurrent calls |
 | [#806](https://github.com/kubeflow/sdk/pull/806) | kubeflow/sdk | `get_container_devices`: handle empty and memory-only resource limits |
 | [#3175](https://github.com/kubeflow/spark-operator/pull/3175) | kubeflow/spark-operator | `ScheduledSparkApplication`: recover from `FailedValidation` once spec is fixed |
 | [#199](https://github.com/kubeflow/pipelines-components/pull/199) | kubeflow/pipelines-components | Handle empty `metadata.yaml` in `check_component_freshness` |
