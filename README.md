@@ -20,11 +20,11 @@
 
 GenAI Engineer Intern @ **AllCognix AI**, building RAG pipelines and production ML infrastructure on Haystack 2.x.
 
-- **8 merged PRs** across **deepset-ai/haystack** (25k★) and **run-llama/llama_index** (40k★)
-- Built **ShardFlow** — distributed LLM inference hitting **28.10 TPS** on Qwen2.5-7B across free Kaggle GPUs over public WAN
+- **15 merged PRs** across **deepset-ai/haystack** (25k★), **run-llama/llama_index** (40k★), **mlflow**, **pydata/sparse** and **kubeflow/mcp-server**, plus 10 more in review across Haystack, Kubeflow, Jaeger and AiiDA
+- Built **ShardFlow**, distributed LLM inference hitting **28.10 TPS** on Qwen2.5-7B across free Kaggle GPUs over public WAN
 - Cut RAG latency by **40%** and token costs by **60%** via Haystack 2.x migration + context windowing
 - Reduced document ingestion from **70s → 27s** with parallel processing
-- Published quantization stability research on Jetson Nano edge hardware — [preprint on Zenodo](https://doi.org/10.5281/zenodo.20776823)
+- Published quantization stability research on Jetson Nano edge hardware: [preprint on Zenodo](https://doi.org/10.5281/zenodo.20776823)
 
 ---
 
@@ -115,28 +115,53 @@ Time-series sales forecasting on 1M+ rows of Rossmann store data. Feature engine
 
 ## Open Source
 
-**8 merged PRs** across [deepset-ai/haystack](https://github.com/deepset-ai/haystack) (25k★) and [run-llama/llama_index](https://github.com/run-llama/llama_index) (40k★)
+## Open Source
 
-| PR | Repo | Fix |
-|----|------|-----|
-| [#11419](https://github.com/deepset-ai/haystack/pull/11419) | haystack | `DocumentLanguageClassifier` crash on blob-only docs — uncaught `TypeError` replaced with graceful fallback |
-| [#11711](https://github.com/deepset-ai/haystack/pull/11711) | haystack | `RecursiveDocumentSplitter` silent metadata corruption — `split_idx_start` miscalculated with overlap enabled |
-| [#11768](https://github.com/deepset-ai/haystack/pull/11768) | haystack | `RecursiveDocumentSplitter` overlap loss — `split_overlap` ignored on no-separator fallback path |
-| [#11847](https://github.com/deepset-ai/haystack/pull/11847) | haystack | `FallbackChatGenerator` serialization — fallback chains lost on `to_dict()` roundtrip |
-| [#11987](https://github.com/deepset-ai/haystack/pull/11987) | haystack | `EmbeddingBasedDocumentSplitter` — `split_idx_start` metadata inconsistency |
-| [#12206](https://github.com/deepset-ai/haystack/pull/12206) | haystack | `PipelineBase.remove_component` — auto-variadic socket flag not reset on removal |
-| [#12387](https://github.com/deepset-ai/haystack/pull/12387) | haystack | `PipelineBase.__eq__` — inverted `isinstance` check raised unhandled `AssertionError` on non-Pipeline comparison |
-| [#12407](https://github.com/deepset-ai/haystack/pull/12407) | haystack | `AzureOpenAIChatGenerator.to_dict()` — `TypeError` when `response_format` is a plain dict |
-| [#22167](https://github.com/run-llama/llama_index/pull/22167) | llama_index | `SemanticDoubleMergingSplitterNodeParser` — incorrect stopword removal |
+**15 merged PRs** across [deepset-ai/haystack](https://github.com/deepset-ai/haystack) (25k★), [run-llama/llama_index](https://github.com/run-llama/llama_index) (40k★), [mlflow/mlflow](https://github.com/mlflow/mlflow), [pydata/sparse](https://github.com/pydata/sparse) and [kubeflow/mcp-server](https://github.com/kubeflow/mcp-server), with 10 more open across Haystack, Kubeflow, Jaeger and AiiDA.
+
+### Merged
+
+| PR | Repo | Change |
+|----|------|--------|
+| [#12529](https://github.com/deepset-ai/haystack/pull/12529) | haystack | `DocumentSplitter`: new `split_by="token"` mode using tiktoken |
+| [#12485](https://github.com/deepset-ai/haystack/pull/12485) | haystack | `ComponentTool` deserialization support in OpenAI and Azure responses chat generators |
+| [#12407](https://github.com/deepset-ai/haystack/pull/12407) | haystack | `AzureOpenAIChatGenerator.to_dict()`: `TypeError` when `response_format` is a plain dict |
+| [#12387](https://github.com/deepset-ai/haystack/pull/12387) | haystack | `PipelineBase.__eq__`: unhandled `AssertionError` on non-Pipeline comparison |
+| [#12206](https://github.com/deepset-ai/haystack/pull/12206) | haystack | `PipelineBase.remove_component`: auto-variadic socket state not restored on removal |
+| [#11987](https://github.com/deepset-ai/haystack/pull/11987) | haystack | `EmbeddingBasedDocumentSplitter`: `split_idx_start` metadata not populated |
+| [#11847](https://github.com/deepset-ai/haystack/pull/11847) | haystack | `FallbackChatGenerator`: nested chat generators lost on `to_dict()` roundtrip |
+| [#11768](https://github.com/deepset-ai/haystack/pull/11768) | haystack | `RecursiveDocumentSplitter`: `split_overlap` ignored on no-separator fallback path |
+| [#11711](https://github.com/deepset-ai/haystack/pull/11711) | haystack | `RecursiveDocumentSplitter`: wrong `split_idx_start` with word/token units and overlap |
+| [#11419](https://github.com/deepset-ai/haystack/pull/11419) | haystack | `DocumentLanguageClassifier`: crash on docs with `content=None` |
+| [#22167](https://github.com/run-llama/llama_index/pull/22167) | llama_index | `SemanticDoubleMergingSplitterNodeParser`: stopword removal now uses word tokenization |
+| [#25862](https://github.com/mlflow/mlflow/pull/25862) | mlflow | `set_logged_model_tags`: bulk upsert for SQLite, PostgreSQL and MySQL |
+| [#274](https://github.com/kubeflow/mcp-server/pull/274) | kubeflow/mcp-server | Unrestricted access not propagated when inheriting from parent persona |
+| [#955](https://github.com/pydata/sparse/pull/955) | pydata/sparse | `sparse.diagonal`: support for negative offsets, rectangular shapes and negative axes |
+| [#960](https://github.com/pydata/sparse/pull/960) | pydata/sparse | `save_npz` / `load_npz`: support for CSR, CSC and DOK formats |
+
+### In Review
+
+| PR | Repo | Change |
+|----|------|--------|
+| [#12990](https://github.com/deepset-ai/haystack/pull/12990) | haystack | `Agent`: schema-constrained structured outputs with a recovery loop |
+| [#12824](https://github.com/deepset-ai/haystack/pull/12824) | haystack | Redact `ImageContent` and `FileContent` in `ToolCallResult` trace dicts |
+| [#248](https://github.com/kubeflow/mcp-server/pull/248) | kubeflow/mcp-server | Return `RESOURCE_NOT_FOUND` on missing job in trainer monitoring tools |
+| [#279](https://github.com/kubeflow/mcp-server/pull/279) | kubeflow/mcp-server | Make `_inject_trainer_hf_home` thread-safe for concurrent calls |
+| [#806](https://github.com/kubeflow/sdk/pull/806) | kubeflow/sdk | `get_container_devices`: handle empty and memory-only resource limits |
+| [#3175](https://github.com/kubeflow/spark-operator/pull/3175) | kubeflow/spark-operator | `ScheduledSparkApplication`: recover from `FailedValidation` once spec is fixed |
+| [#199](https://github.com/kubeflow/pipelines-components/pull/199) | kubeflow/pipelines-components | Handle empty `metadata.yaml` in `check_component_freshness` |
+| [#9658](https://github.com/jaegertracing/jaeger/pull/9658) | jaeger | ai-sidecar: point default MCP URL to query port 16686 |
+| [#9511](https://github.com/jaegertracing/jaeger/pull/9511) | jaeger | ai-sidecar: join ACP prompt blocks with a delimiter to prevent token fusion |
+| [#7598](https://github.com/aiidateam/aiida-core/pull/7598) | aiida-core | `JsonableData`: preserve `@module` and `@class` keys before `from_dict()` |
 
 ---
 
 ## Currently
 
-- Interning @ **AllCognix AI** — production RAG system on Haystack 2.x, EC2, Weaviate, Redis, Vault
-- OSS contributions to **deepset-ai/haystack** — 8 merged PRs, ongoing
+- Interning @ **AllCognix AI**: production RAG system on Haystack 2.x, EC2, Weaviate, Redis, Vault
+- OSS contributions to **deepset-ai/haystack** (10 merged PRs, more in review) and **Kubeflow** (mcp-server, sdk, spark-operator, pipelines-components)
 - Research paper targeting **Computers and Electronics in Agriculture** (Q1 Elsevier)
-- Open to **ML Engineer / GenAI roles** — remote, India & international
+- Open to **ML Engineer / GenAI roles**: remote, India & international
 
 ---
 
